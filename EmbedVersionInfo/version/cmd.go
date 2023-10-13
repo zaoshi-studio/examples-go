@@ -13,9 +13,9 @@ var (
 
 var Cmd = &cobra.Command{
 	Use: "version",
-	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("Git hash: \t", GitHash)
-		fmt.Println("Go version: \t", GoVersion)
-		fmt.Println("Build time: \t", BuildTime)
+	Run: func(_ *cobra.Command, _ []string) {
+		fmt.Println("Go Version:", GoVersion)
+		fmt.Println("Git Hash: ", GitHash)
+		fmt.Println("Build Time: ", BuildTime)
 	},
 }
